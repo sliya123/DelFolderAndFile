@@ -1,0 +1,11 @@
+del_folder:
+
+123
+
+
+
+
+del_file:
+
+.DS_Store
+.DD_STORE
