@@ -9,3 +9,11 @@ makbook压缩包在Windows平台解压后会有一些无用的文件，这些文
 注意格式，一定要写在下面，且行首和行尾不能有空格，后续待优化。
 
 程序默认删除当前路径下的文件夹及其子文件夹中的文件。
+
+# 编译程序
+```
+mkdir build
+cd build
+cmake -G"MinGW Makefiles" ..
+cmake --build .
+```
