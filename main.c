@@ -3,13 +3,17 @@
 //
 #include <stdio.h>
 #include "delHiddenFiles.h"
+
 // gcc -o go_del dstring.c delHiddenFiles.c main.c
 
-int main() {
+int main(int argc, char **argv) {
+
+	
     char buffer[MAX_PATH];					// 存放当前的路径
     GetCurrentDirectory(MAX_PATH, buffer); 	// 获取当前路径
     initDelData();
 
     listFiles(buffer);
+	getchar();
     return 0;
 }
